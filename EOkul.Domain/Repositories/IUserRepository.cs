@@ -1,5 +1,8 @@
 ﻿
+using EOkul.Domain.Entities;
 
 namespace EOkul.Domain.Repositories;
 
-public interface IUserRepository
+public interface IUserTypeRepository : IRepository<UserType>
+{
+}
