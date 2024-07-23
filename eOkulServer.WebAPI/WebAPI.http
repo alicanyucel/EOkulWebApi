@@ -1,0 +1,6 @@
+@eOkulServer.WebAPI_HostAddress = http://localhost:5268
+
+GET {{eOkulServer.WebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

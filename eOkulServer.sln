@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eOkulServer.Domain", "eOkulServer.Domain\eOkulServer.Domain.csproj", "{79061975-471A-40CB-A597-78E70D869E46}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B30692D7-81D9-4F18-8FFC-5DF10491ACEF}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eOkulServer.Application", "eOkulServer.Application\eOkulServer.Application.csproj", "{7EE64972-8A9C-4C29-8C4B-8F8671BB8F81}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eOkulServer.Infrastructure", "eOkulServer.Infrastructure\eOkulServer.Infrastructure.csproj", "{4E7FB6E7-BB5A-4EF6-8E88-515730D1A3E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eOkulServer.WebAPI", "eOkulServer.WebAPI\eOkulServer.WebAPI.csproj", "{01120771-576E-4AB1-A4AA-79EBF6C1028D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79061975-471A-40CB-A597-78E70D869E46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79061975-471A-40CB-A597-78E70D869E46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79061975-471A-40CB-A597-78E70D869E46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79061975-471A-40CB-A597-78E70D869E46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EE64972-8A9C-4C29-8C4B-8F8671BB8F81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EE64972-8A9C-4C29-8C4B-8F8671BB8F81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EE64972-8A9C-4C29-8C4B-8F8671BB8F81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EE64972-8A9C-4C29-8C4B-8F8671BB8F81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E7FB6E7-BB5A-4EF6-8E88-515730D1A3E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E7FB6E7-BB5A-4EF6-8E88-515730D1A3E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E7FB6E7-BB5A-4EF6-8E88-515730D1A3E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E7FB6E7-BB5A-4EF6-8E88-515730D1A3E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01120771-576E-4AB1-A4AA-79EBF6C1028D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01120771-576E-4AB1-A4AA-79EBF6C1028D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01120771-576E-4AB1-A4AA-79EBF6C1028D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01120771-576E-4AB1-A4AA-79EBF6C1028D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9B9D3B51-A41F-49DE-B3C2-EB39DB51939A}
+	EndGlobalSection
+EndGlobal
