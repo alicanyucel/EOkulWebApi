@@ -19,6 +19,11 @@ internal class Repository<T>(
         await context.AddAsync(entity, cancellationToken);
     }
 
+    public async Task CreateRangeAsync(List<T> entities, CancellationToken cancellationToken = default)
+    {
+        await context.AddRangeAsync(entities, cancellationToken);
+    }
+
     public void Delete(T entity)
     {
         context.Remove(entity);

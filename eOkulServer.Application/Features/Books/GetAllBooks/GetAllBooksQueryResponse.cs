@@ -7,7 +7,7 @@ public sealed record GetAllBooksQueryResponse
     public string Author { get; set; } = default!;
     public string Summary { get; set; } = default!;
     public string ISBN { get; set; } = default!;
-    public List<string> BookImages { get; set; } = new();
+    public List<string> BookImageNames { get; set; } = new();
     public string CoverImage { get; set; } = default!;
     public List<string> CategoryNames { get; set; } = new();
 }

@@ -27,7 +27,7 @@ internal sealed class GetAllBooksQueryHandler(
                 Summary = s.Summary,
                 Title = s.Title,
                 CategoryNames = s.BookCategories!.Select(s => s.Category!.Name).ToList(),
-                BookImages = s.BookImages!.Select(s => s.ImageUrl).ToList(),
+                BookImageNames = s.BookImages!.Select(s => s.ImageUrl).ToList(),
                 CoverImage = s.BookImages!.First(s => s.IsCoverImage == true).ImageUrl
             }).ToListAsync(cancellationToken);
 

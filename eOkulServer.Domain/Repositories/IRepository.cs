@@ -6,6 +6,7 @@ public interface IRepository<T>
     where T : Entity
 {
     Task CreateAsync(T entity, CancellationToken cancellationToken = default);
+    Task CreateRangeAsync(List<T> entities, CancellationToken cancellationToken = default);
     void Update(T entity);
     void Delete(T entity);
     IQueryable<T> GetAll();

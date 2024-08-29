@@ -1,5 +1,8 @@
-﻿using eOkulServer.Application.Features.Books.CreateBook;
+﻿using eOkulServer.Application.Features.Books.AddNewBokImages;
+using eOkulServer.Application.Features.Books.ChangeBookCoverImage;
+using eOkulServer.Application.Features.Books.CreateBook;
 using eOkulServer.Application.Features.Books.GetAllBooks;
+using eOkulServer.Application.Features.Books.RemoveBookImage;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -24,4 +27,26 @@ public class BooksController : ApiBase
         var response = await mediator.Send(request, cancellationToken);
         return StatusCode(response.StatusCode, response);
     }
+
+    [HttpPost]
+    public async Task<IActionResult> ChangeCoverImage(ChangeBookCoverImageCommand request, CancellationToken cancellationToken)
+    {
+        var response = await mediator.Send(request, cancellationToken);
+        return StatusCode(response.StatusCode, response);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> AddNewImages([FromForm] AddNewBokImagesCommand request, CancellationToken cancellationToken)
+    {
+        var response = await mediator.Send(request, cancellationToken);
+        return StatusCode(response.StatusCode, response);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> RemoveImage(RemoveBookImageCommand request, CancellationToken cancellationToken)
+    {
+        var response = await mediator.Send(request, cancellationToken);
+        return StatusCode(response.StatusCode, response);
+    }
+
 }
